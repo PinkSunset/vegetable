@@ -2,7 +2,6 @@ module.exports = {
   content: ['./src/**/*.{htm,md,njk}'],
   theme: {
     screens: {
-      '2xs': '360px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -33,10 +32,8 @@ module.exports = {
       },
       colors: {
         inherit: 'inherit',
-        'mercury':'#E5E5E5',
-        'shark':'#191B20',
-        'tree-poppy':'#F69020',
-        'shuttle-gray' : '#606571'
+        'narvik__1':'#F3FBF8',
+        'narvik__2':'#191B20',
       },
       gridTemplateRows: {
         'aa1': 'repeat(2, auto) 1fr',
@@ -54,9 +51,7 @@ module.exports = {
         'base' : '0px 0px 4px rgba(255, 255, 255, 0.25)'
       },
       boxShadow: {
-        'purp': '0px 0px 3px rgb(120, 20, 147)',
-        'fiol': '0px 0px 6px rgb(107, 104, 224)',
-        'puk': '0px 0px 13px rgb(0, 0, 0)',
+
       },
     },
   },
