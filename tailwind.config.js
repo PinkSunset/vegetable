@@ -34,6 +34,8 @@ module.exports = {
         inherit: 'inherit',
         'narvik__1':'#F3FBF8',
         'narvik__2':'#191B20',
+        'gossamer' : '#09A66D',
+        'japanese__laurel' : '#208E0B'
       },
       gridTemplateRows: {
         'aa1': 'repeat(2, auto) 1fr',
