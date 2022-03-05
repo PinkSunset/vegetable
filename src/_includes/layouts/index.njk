@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html lang="{{ locale|default('ru') }}">
+	<head>
+		<meta charset="utf-8">
+		<link rel="dns-prefetch" href="https://identity.netlify.com">
+		<link rel="canonical" href="{{ site.rootUrl }}{{ page.url }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ envs.site.name }}</title>
+		<meta name="description" content="{{ description }}">
+		<meta name="keywords" content="{{ keywords }}">
+		<link rel="icon" type="image/png" href="{{ envs.site.faviconUrl | url }}">
+		<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<link rel="stylesheet" href="/dist/css/style.css">
+	</head>
+	<body class="bg-shark">
+
+		{% include "partials/header/header.njk" %}
+
+		<main>
+			{{ content | safe }}
+		</main>
+
+		{% include "partials/footer/footer.njk" %}
+		<script src="/dist/js/app.js"></script>
+	</body>
+
+</html>
