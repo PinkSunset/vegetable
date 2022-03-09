@@ -1,30 +1,35 @@
 <div class="bg-white ">
-    <div class="container px-4 py-5 mx-auto sm:py-6 sm:px-7">
+    <nav class="px-4 py-5 2xl:container 2xl:mx-auto sm:py-6 sm:px-7">
         <div class="flex justify-between "> 
-                <nav class="flex-row items-center hidden space-x-6 sm:flex">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>   
-                </nav>                                                         
-                <div class="grid items-center grid-cols-3 gap-x-10">
-                <svg class="w-14 h-14 ">
+            <nav class="flex-row items-center hidden space-x-6 sm:flex">
+                <a href="">About Us</a>
+                <a href="">Service</a>
+                <a href="">Menu</a>
+                <a href="">Contact</a>                                                            
+            </nav>
+            <div class="flex items-center space-x-3 ">
+                <svg class="text-black w-14 h-14">
                     <use xlink:href="/images/icons/all-icon.svg#icon_logo"></use>
-                </svg>
+                </svg>           
             </div>
-            <div class="items-center justify-center w-10 h-10 rounded-full bg-narvik__1" >
-                <svg class="w-[18px] h-[18px] ">
-                    <use xlink:href="/images/icons/all-icon.svg#icon_search"></use>
-                </svg>
-            <div class="items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
-                <svg class="w-[18px] h-[18px] ">
-                    <use xlink:href="/images/icons/all-icon.svg#icon_buy"></use>
-                </svg>
-            </div>
-            <div class="grid grid-cols-2 max-w-max gap-x-6 2xs:hidden lg:block">
-                <button class="flex items-center justify-center w-24 h-10 space-x-2 text-sm font-normal leading-3 text-white duration-150 rounded-md bg-gossamer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-mint__green focus:bg-mint__green hover:bg-mint__green" >Regestar Now
+            <div class="flex flex-row items-center justify-center space-x-4">
+                <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
+                    <div class="flex items-center justify-center w-10 h-10rounded-full bg-narvik__1">
+                    <svg class="w-4 h-4 text-black">
+                        <use xlink:href="/images/icons/all-icon.svg#icon_search"></use>
+                    </svg> 
+                </div>  
+                </button>   
+                <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
+                        <svg class="w-4 h-4 text-black">
+                            <use xlink:href="/images/icons/all-icon.svg#icon_buy"></use>
+                        </svg> 
+                    </div>  
+                    </button>  
+                <button class="flex items-center justify-center h-10 space-x-2 text-sm font-normal leading-3 text-white duration-150 rounded-md w-28 bg-gossamer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gossamer focus:bg-japanese__laurel hover:bg-japanese__laurel" >Regestar Now
                 </button>
             </div>
         </div>
-    </div>    
+    </nav>    
 </div>

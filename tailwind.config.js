@@ -33,7 +33,7 @@ module.exports = {
       colors: {
         inherit: 'inherit',
         'narvik__1':'#F3FBF8',
-        'narvik__2':'#191B20',
+        'narvik__2':'#F3FBF8',
         'gossamer' : '#09A66D',
         'japanese__laurel' : '#208E0B'
       },
