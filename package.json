@@ -1,5 +1,5 @@
 {
-	"name": "RoiBee",
+	"name": "Vegetables",
 	"scripts": {
 		"clean": "rimraf _site",
 		"build:eleventy": "npx eleventy",
