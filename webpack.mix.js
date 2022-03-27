@@ -1,6 +1,8 @@
 const path = require('path');
 const mix = require('laravel-mix');
 
+
+
 const arJsPage = [
     './src/assets/js/app.js',
 ];
@@ -26,3 +28,4 @@ arCssPage.forEach(sCssPage => {
 });
 
 mix.disableNotifications();
+
