@@ -1,28 +1,28 @@
 
 /* dm-sans-regular - latin */
 @font-face {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
+     font-family: 'DM Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
          url('../font/dm-sans-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
          url('../font/dm-sans-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-  }
+}
   /* dm-sans-500 - latin */
-  @font-face {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
+@font-face {
+     font-family: 'DM Sans';
+     font-style: normal;
+     font-weight: 500;
+     src: local(''),
          url('../font/dm-sans-v10-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
          url('../font/dm-sans-v10-latin-500.woff') format('woff'), /* Modern Browsers */
-  }
+}
   /* dm-sans-700 - latin */
-  @font-face {
-    font-family: 'DM Sans';
-    font-style: bold;
-    font-weight: 700;
-    src: local(''),
+@font-face {
+     font-family: 'DM Sans';
+     font-style: bold;
+     font-weight: 700;
+     src: local(''),
          url('../font/DMSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
          url('../font/DMSans-Bold.woff') format('woff'), /* Modern Browsers */
-  }
+}
