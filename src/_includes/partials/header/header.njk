@@ -1,19 +1,19 @@
 <div class="bg-white ">
     <nav class="container px-4 py-5 mx-auto sm:py-6 sm:px-7">
         <div class="flex justify-between "> 
-            <nav class="flex-row items-center hidden space-x-6 sm:flex">
-                <a href="">About Us</a>
-                <a href="">Service</a>
-                <a href="">Menu</a>
-                <a href="">Contact</a>                                                            
-            </nav>
+                <nav class="flex-row items-center justify-center hidden space-x-6 sm:flex">
+                    <a href="">About Us</a>
+                    <a href="">Service</a>
+                    <a href="">Menu</a>
+                    <a href="">Contact</a>                                                            
+                </nav>
             <div class="flex items-center space-x-3 ">
                 <svg class="text-black w-14 h-14">
                     <use xlink:href="/images/icons/all-icon.svg#icon_logo"></use>
                 </svg>           
             </div>
             <div class="flex flex-row items-center justify-center space-x-4">
-                <div class="hidden sm:block">
+                <div class="hidden md:block">
                     <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
                         <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
                         <svg class="w-4 h-4 text-black">
@@ -22,7 +22,7 @@
                     </div>  
                     </button>   
                 </div>
-                <div class="hidden sm:block">
+                <div class="hidden md:block">
                     <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
                         <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
                             <svg class="w-4 h-4 text-black">
@@ -33,6 +33,11 @@
                 </div>
                 <button class="flex items-center justify-center w-24 h-10 space-x-2 text-sm leading-3 text-white transition-all duration-150 rounded-md sm:w-28 bg-gossamer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gossamer focus:bg-japanese__laurel hover:bg-japanese__laurel" >Regestar Now
                 </button>
+                <div id="bgIcon" onclick="toggleMenu()"  class="flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 md:hidden">
+                <img class="dark:bg-white" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-3-svg6.svg" alt="burger" />
+                <img class="hidden dark:bg-white" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/header-3-svg7.svg" alt="cross" />                                                               
+                    </div>
+                </div>
             </div>
         </div>
     </nav>  
