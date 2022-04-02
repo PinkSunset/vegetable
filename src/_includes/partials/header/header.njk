@@ -1,65 +1,62 @@
 <header
     x-data="{ navMenu: false }"
-    class="h-20 overflow-hidden"
+    class="h-20"
 >
-    <div class="bg-white ">
-        <div class="px-4 py-5 mx-auto overflow-hidden md:container sm:py-6 sm:px-7">
-            <div class="flex justify-between"> 
-                    <nav :class="{'' : navMenu, '-translate-y-full md:translate-y-0' : !navMenu }" class="absolute top-0 left-0 z-50 w-1/2 h-screen p-5 transition-all duration-500 bg-white md:right-auto md:top-auto md:h-auto md:w-auto md:bg-inherit md:static">
-                        <ul class="grid items-center justify-center text-xl mt-14 gap-y-6 md:grid-flow-col md:gap-5 md:max-w-max">
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#">Service</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                <div class="flex items-center space-x-3 ">
-                    <svg class="text-black w-14 h-14">
-                        <use xlink:href="/images/icons/all-icon.svg#icon_logo"></use>
-                    </svg>           
-                </div>
-                <div class="flex flex-row items-center justify-center space-x-4">
-                    <div class="hidden md:block">
-                        <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
-                                <svg class="w-4 h-4 text-black">
-                                    <use xlink:href="/images/icons/all-icon.svg#icon_search"></use>
-                                </svg> 
-                            </div>  
-                        </button>   
-                    </div>
-                    <div class="hidden md:block">
-                        <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
-                                <svg class="w-4 h-4 text-black">
-                                    <use xlink:href="/images/icons/all-icon.svg#icon_buy"></use>
-                                </svg> 
-                            </div>  
-                        </button>  
-                    </div>
-                    <button class="flex items-center justify-center w-24 h-10 space-x-2 text-sm leading-3 text-white transition-all duration-150 rounded-md sm:w-28 bg-gossamer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gossamer focus:bg-japanese__laurel hover:bg-japanese__laurel" >Regestar Now
-                    </button>
-                    <div class="flex items-center justify-center w-10 h-10 transition-colors duration-300 rounded-sm md:hidden hover:bg-gray-200">
-                        <button 
-                        @click="navMenu = !navMenu"
-                        class="header__burger" 
-                        :class="{'header__burger-open' : navMenu}"
-                        >
-                            <span></span>
-                        </button>
-                    </div>
-                    
-                    </div>
-                </div>
+    <div class="px-4 py-5 mx-auto overflow-x-hidden md:container sm:py-6 sm:px-7">
+        <div class="flex justify-between"> 
+            <nav :class="{'' : navMenu, '-translate-y-full md:translate-y-0' : !navMenu }" class="absolute top-0 left-0 z-50 w-1/2 h-screen p-5 transition-all duration-500 bg-white md:right-auto md:top-auto md:h-auto md:w-auto md:bg-inherit md:static">
+                <ul class="grid items-center justify-center text-xl mt-14 md:mt-0 gap-y-6 md:grid-flow-col md:gap-5 md:max-w-max">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex items-center">
+                <svg class="text-black w-14 h-14">
+                    <use xlink:href="/images/icons/all-icon.svg#icon_logo"></use>
+                </svg>           
             </div>
-        </nav>  
+            <div class="flex items-center justify-center space-x-4">
+                <div class="hidden md:block">
+                    <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
+                            <svg class="w-4 h-4 text-black">
+                                <use xlink:href="/images/icons/all-icon.svg#icon_search"></use>
+                            </svg> 
+                        </div>  
+                    </button>   
+                </div>
+                <div class="hidden md:block">
+                    <button class="grid items-center grid-flow-col pr-3 rounded-full gap-x-4 max-w-max group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-narvik__1">
+                            <svg class="w-4 h-4 text-black">
+                                <use xlink:href="/images/icons/all-icon.svg#icon_buy"></use>
+                            </svg> 
+                        </div>  
+                    </button>  
+                </div>
+                <button class="flex items-center justify-center w-24 h-10 space-x-2 text-sm leading-3 text-white transition-all duration-150 rounded-md sm:w-28 bg-gossamer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gossamer focus:bg-japanese__laurel hover:bg-japanese__laurel" >Regestar Now
+                </button>
+                <div class="flex items-center justify-center w-12 h-12 transition-colors duration-300 rounded-sm md:hidden hover:bg-gray-200">
+                    <button 
+                    @click="navMenu = !navMenu"
+                    class="header__burger" 
+                    :class="{'header__burger-open' : navMenu}"
+                    >
+                        <span></span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </header>
